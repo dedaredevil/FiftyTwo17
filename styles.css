@@ -1,0 +1,16 @@
+body#background {
+  background: url('/background.jpg') no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  font-size: 40px;
+  color: #f6eceb;
+}
