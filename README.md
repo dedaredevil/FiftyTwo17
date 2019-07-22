@@ -1,10 +1,16 @@
 # Timer 52 / 17
 
-The 52-minute timer is based on an article I read in which they gathered data from the most productive users on DeskTime and found 52 by 17’s timers to be the most effective.
+The 52-minute timer is based on an article I read in which they gathered data from the most productive users on DeskTime and found 52 minutes of working, followed by a 17-minute long break is extremely effective.
 
 ## Getting Started
 
 Press space to pause and space again to resume. Notice that the percentage font will change to a rosy pink.
+
+Use the command below to see more detailed information in the console.
+
+```
+Ctrl + Shift + 'J'
+```
 
 ## Running
 
