@@ -1,10 +1,12 @@
-# Timer 52 / 17
+# 52 Dash 17 Pomodoro Timer :tomato:
 
-The 52-minute timer is based on an article I read in which they gathered data from the most productive users on DeskTime and found 52 minutes of working, followed by a 17-minute long break is extremely effective.
+The 52-minute timer is based on an article I read in which they gathered data from the most productive users on DeskTime and found 52 minutes of working, followed by a 17-minute long break, is highly effective.
 
-## Getting Started
+## Instructions
 
-Press space to pause and space again to resume. Notice that the percentage font will change to a rosy pink when paused. The font will change back to white when resumed.
+- Space to pause
+- Space to unpause 
+- If the percentage is pink, it means that the program is paused 
 
 Use the command below to see more detailed information in the console.
 
