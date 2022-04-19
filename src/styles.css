@@ -15,7 +15,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  height: 100vh;
   font-size: 40px;
   color: #f6eceb;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'VT323', monospace;
 }
