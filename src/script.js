@@ -40,7 +40,7 @@ function doTimer() {
   } else {
     clearInterval(interval)
     interval = false
-    h1Element.style.color = '#e2bac5'
+    h1Element.style.color = '#b8c4b0'
     console.log('paused')
   }
 }
