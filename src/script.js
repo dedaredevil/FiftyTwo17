@@ -1,40 +1,20 @@
-const workTime = 3120
-const breakTime = 17
-// 3120 seconds = 52 minutes
 
-
+const maxWorkTime = 3120
+const maxBreakTime = 1020
+const endTime = 52
 let timerElement = document.getElementById('timer')
 let h1Element = document.getElementById('h1')
 let timer = 0
-let currentTime = 0
+let seconds = 0
 let interval
+let minutes = 0
 
-interval = setInterval(timeIt, 1000)
+interval = setInterval(timeLoop, 1000)
 
 document.addEventListener('keydown', (event) => {
   const key = event.key.toLocaleLowerCase()
-  if (key === ' ') {
-    doTimer()
-  }
-})
-
-function timeIt() {
-  if (timer < 100) {
-    currentTime++
-    if (Math.trunc((currentTime / workTime) * 100) != timer) {
-      timerElement.textContent = `${Math.trunc(
-        (currentTime / workTime) * 100
-      )}`
-      document.title = `${Math.trunc((currentTime / workTime) * 100)}%`
-    }
-    timer = Math.trunc((currentTime / workTime) * 100)
-    displayTime()
-  }
-}
-
-function doTimer() {
-  if (!interval) {
-    interval = setInterval(timeIt, 1000)
+  if (key === ' ' && !interval) {
+    interval = setInterval(timeLoop, 1000)
     h1Element.style.color = '#f6eceb'
     console.log('resumed')
   } else {
@@ -43,11 +23,16 @@ function doTimer() {
     h1Element.style.color = '#b8c4b0'
     console.log('paused')
   }
-}
+})
 
-function displayTime() {
-  let minutes = Math.floor(currentTime / 60)
-  let seconds = currentTime - minutes * 60
-  // For testing
-  console.log(`Minutes: ${minutes}, Seconds: ${seconds}, Percent: ${timer}`)
+function timeLoop() {
+  if (seconds < maxWorkTime) {
+    seconds++
+    minutes = Math.floor(seconds / 60)
+    document.title = `${(maxWorkTime/60)-minutes}` + ' Minutes Left'
+    timerElement.textContent = `${(maxWorkTime/60)-minutes}`
+  } 
+  // For testing purposes
+  console.log('seconds ' + seconds);
+  console.log('minutes ' + Math.floor(seconds / 60))
 }
