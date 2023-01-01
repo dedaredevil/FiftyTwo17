@@ -16,10 +16,6 @@ Use the command below to see more detailed information in the console.
 Ctrl + Shift + 'J'
 ```
 
-## Running
+## Live Preview
 
-Just click [HERE](http://fluttering-fight.surge.sh/), or copy-paste the link below:
-
-```
-http://fluttering-fight.surge.sh/
-```
+Demo [HERE](http://fifty-two-17.vercel.app/)
